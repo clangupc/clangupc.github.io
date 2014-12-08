@@ -6,8 +6,9 @@ tagline:
 {% include JB/setup %}
 
 The Clang UPC toolset provides a compilation and execution environment for
-programs written in the UPC (Unified Parallel C) language. The Clang UPC compiler
-extends the capabilities of the Clang front-end for the LLVM compiler.
+programs written in the UPC (Unified Parallel C) language.
+The Clang UPC compiler extends the capabilities of the Clang front-end
+for the LLVM compiler.
 
 ### Latest News
 <ul class="posts">
@@ -64,13 +65,12 @@ UPC threads running on separate nodes in a system area network.
 More information on the [Portals4 Runtime](/portals4/index.html).
 
 - - -
-- - -
 
 #### Libfabric Runtime
 
 Clang UPC Libfabric Runtime is an implementation of Clang UPC that uses
-Libfabric API for message passing between UPC threads running on separate nodes
-in a system area network.
+Libfabric API for message passing between UPC threads running on
+separate nodes in a system area network.
 
 More information in the [Libfabric Runtime](/libfabric/index.html).
 
@@ -79,7 +79,8 @@ More information in the [Libfabric Runtime](/libfabric/index.html).
 #### Try it and get involved!
 
 Once you have a chance to try it, consider getting involved in the Clang UPC
-community.  <a href="mailto:info@intrepid.com">Drop us a message</a> with your ideas and observations.
+community.  <a href="mailto:info@intrepid.com">Drop us a message</a>
+with your ideas and observations.
 
 #### Other UPC projects
 
@@ -100,6 +101,6 @@ community.  <a href="mailto:info@intrepid.com">Drop us a message</a> with your i
 
   Berkeley UPC project page.  Clang UPC (both compiler and UPC2C translator)
   can be used together with the Berkeley UPC framework and runtime, allowing
-  the execution of UPC programs on the large-scale multiprocessors,
+  the execution of UPC programs on large-scale multiprocessors,
   PC clusters, and clusters of shared memory multiprocessors.
 
