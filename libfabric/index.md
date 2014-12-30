@@ -59,6 +59,12 @@ Select directory where libfabric is installed.
 
 ### Project status
 
+* 12/26/2014 Added UPC barrier (no trigger funcs)
+
+* 12/26/2014 Added broadcast capabilities
+
+* 12/24/2014 Added uPC locks
+
 * 10/28/2014 Upgrade to the latest libfabric API
 
 * 10/17/2014 Added support for remote put/get
