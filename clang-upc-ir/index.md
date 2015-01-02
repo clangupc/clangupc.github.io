@@ -47,14 +47,14 @@ branch before running cmake/make.
 
 The following configuration options have been added:
 
-* __-DUPC_IR_REMOTE_POINTER_BITS__:=_thread,address_
+* __-DUPC_IR_RP_BITS__:=_thread,address_
                                                                                 
   UPC Remote Pointer representation.  Number of bits in thread and address
   must add to 64.
 
-* __-DUPC_IR_ADDRSAPCE__:=_number_
+* __-DUPC_IR_RP_ADDRSPACE__:=_number_
 
-  LLVM address space for UPC Remote Pointer. 15 by default.
+  LLVM address space for UPC Remote Pointer. 16 by default.
 
 #### Compile Options
 
