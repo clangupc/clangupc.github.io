@@ -59,6 +59,8 @@ Select directory where libfabric is installed.
 
 ### Project status
 
+* 01/01/2015 Added support for upc_global_exit()
+
 * 12/26/2014 Added UPC barrier (no trigger funcs)
 
 * 12/26/2014 Added broadcast capabilities
