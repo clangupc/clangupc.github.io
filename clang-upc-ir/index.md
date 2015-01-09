@@ -70,14 +70,18 @@ The following compile time option has been added:
 
 All the work done on this project is on a special _upc-ir_ branch.
 
-* 08/15/2014 - Added appropriate hooks to Clang to emit IR load/store with
-Remote Pointers
+* 01/02/2015 - Add support to autoconf tools
+
+* 12/23/2014 - upc-ir branch was merged into the master
+
+* 10/15/2014 - Majority of UPC tests passes - both packed and struct UPC
+pointer-to-shared representation
 
 * 09/15/2014 - Added transform pass to convert IR load/store with Remote
 Pointers into appropriate calls to the UPC runtime.
 
-* 10/15/2014 - Majority of UPC tests passes - both packed and struct UPC
-pointer-to-shared representation
+* 08/15/2014 - Added appropriate hooks to Clang to emit IR load/store with
+Remote Pointers
 
 ### References
 
