@@ -83,7 +83,7 @@ autoconf, except in the following areas:
 
   Enable UPC runtime NUMA support [default='yes']
 
-### 1.3 Optional Packages
+### 1.3 Optional Configuration 
 
 * __--with-execinfo-lib-path__
 
@@ -116,6 +116,18 @@ autoconf, except in the following areas:
   Specify prefix directory for installed portals4 package
 
 * __--with-upc-job-launcher Select UPC Portals4 job launcher [default=slurm]
+
+The following option are used only when '-fupc-ir' option is provided
+on the compiler command line:
+
+* __--with-upc-ir-rp-addrspace__=ADDRSPACE
+
+  Specify the LLVM address space for the UPC remote pointer (default=16)
+
+* __--with-upc-ir-rp-bits__=thread,addr
+
+  Choose bit distribution in LLVM remote pointer representation
+  (default=20,44)
 
 ### 1.4 Some influential environment variables
 

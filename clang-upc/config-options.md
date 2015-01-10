@@ -90,6 +90,19 @@ The following options control the UPC compiler generated code.
   corresponding to _-fupc-pts=[packed\|struct]_ and
   _-fupc-pts-vaddr-order=[first\|last]_.
 
+The following options are used in the case when "-fupc-ir" option is
+used on the command line:
+
+* __-DUPC_IR_RP_BITS__:=_thread,address_
+
+  UPC Remote Pointer representation.  Number of bits in thread and address
+  must add to 64.  This option is valid on 64 bits architectures only.
+
+* __-DUPC_IR_RP_ADDRSPACE__:=_number_
+
+  LLVM address space for UPC Remote Pointer. 16 by default. This option
+  is valid on 64 bits architectures only.
+
 ### 1.3 Linking Options
 
 * __-DLIBUPC_ENABLE_LINK_SCRIPT__:=[TRUE\|FALSE]

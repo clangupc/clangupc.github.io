@@ -39,6 +39,8 @@ C compiler.
 * Runtime support for UPC thread affinity via Linux scheduling affinity
   and NUMA package
 * Runtime support for UPC thread backtrace 
+* Optional LLVM remote pointer generation to gain benefits of LLVM
+  optimizations
 
 ## Supported Platforms
 

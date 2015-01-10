@@ -40,3 +40,6 @@ under the static threads environment.
 * **-fupc-pts=\<value\>**<br />
   Specify the UPC pointer-to-shared representation (packed or struct)
 
+* **-fupc-ir**<br />
+  Generate UPC Remote Pointer access routines in LLVM (disabled by default).
+
