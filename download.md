@@ -16,7 +16,7 @@ and clang-upc.  Optionally, you can also download the Clang upc2c translator.
 For the end user convenience all three components (llvm-upc, clang-upc, and upc2c)
 are put together in one downloadable file.
 
-* [Clang UPC 3.4.1-1](https://github.com/Intrepid/clang-upc/archive/clang-upc-3.4.1-1/clang-upc-all-3.4.1-1.tar.gz)
+* [Clang UPC 3.4.1-1](https://github.com/Intrepid/clang-upc/releases/download/clang-upc-3.4.1-1/clang-upc-all-3.4.1-1.tar.gz)
 
 - - - -
 
