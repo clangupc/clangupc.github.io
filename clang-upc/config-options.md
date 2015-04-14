@@ -40,7 +40,7 @@ UPC language as well as the selected runtime.
 
   Specify the C compiler used by the build process.
 
-* __-DCMAKE_CXX_COMPILER:=_path-to-c++-compiler_
+* __-DCMAKE_CXX_COMPILER__:=_path-to-c++-compiler_
 
   Specify the C++ compiler used by the build process.
 
