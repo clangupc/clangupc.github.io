@@ -57,6 +57,18 @@ Chose libfabric for the runtime support.
 
 Select directory where libfabric is installed.
 
+* __-DLIBUPC_FABRIC_DEVICE__:=_ib_device_
+
+Select networking device to use.  Default is 'ib0'.
+
+* __-DLIBUPC_FABRIC_PROVIDER__:=_fabric_provider_
+
+Select fabric provider to use.  Default is 'sockets'.
+
+* __-DLIBUPC_FABRIC_SHARED_CTX__:=_0/1_
+
+Enable fabric check for shared endpoints.  Default is disabled.
+
 ### Project status
 
 * 01/01/2015 Added support for upc_global_exit()
