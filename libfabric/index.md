@@ -69,6 +69,10 @@ Select fabric provider to use.  Default is 'sockets'.
 
 Enable fabric check for shared endpoints.  Default is disabled.
 
+* __-DLIBUPC_JOB_PMI_INCLUDE_DIR__:=_pmi_dir_path_
+
+Specify directory where PMI include file is.  Default is '/usr/include/slurm'.
+
 ### Project status
 
 * 01/01/2015 Added support for upc_global_exit()
