@@ -48,9 +48,9 @@ needs to fund _omp.h_, as well as OpenMP runtime library.
 
 <pre>
 export PATH=/install/prefix/bin:$PATH
-export C_INCLUDE_PATH=/install/prefix/include:<OpenMP include path>:$C_INCLUDE_PATH
-export LIBRARY_PATH=/install/prefix/lib:<OpenMP library path>:$LIBRARY_PATH
-export LD_LIBRARY_PATH=/install/prefix/lib:<OpenMP library path>:$LD_LIBRARY_PATH
+export C_INCLUDE_PATH=/install/prefix/include:OpenMP include path:$C_INCLUDE_PATH
+export LIBRARY_PATH=/install/prefix/lib:OpenMP library path:$LIBRARY_PATH
+export LD_LIBRARY_PATH=/install/prefix/lib:OpenMP library path:$LD_LIBRARY_PATH
 </pre>
 
 ### Current Status
