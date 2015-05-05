@@ -45,6 +45,16 @@ More info: [Clang UPC2C webpage](/clang-upc2c/)
 
 - - -
 
+#### Clang OMP Support
+
+The goal of this project is to allow interoperability between UPC and Open MP
+code.  For this purpose an OpenMP/Clang branch (https://clang-omp.github.io/)
+has been merged into the Clang UPC.
+
+More information on the [UPC/OMP Project](/clang-omp/)
+
+- - -
+
 #### LLVM IR Remote Access
 
 The goal of this project is to allow UPC
