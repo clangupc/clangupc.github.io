@@ -31,9 +31,19 @@ git clone https://github.com/clang-omp/compiler-rt_trunk llvm/projects/compiler-
 
 * build and install Intel's OpenMP Runtime Library.
 
+#### UPC/OMP interoperability
+
+The following restrictions apply when executing OMP code in UPC environment:
+
+* OMP worker threads are not allowed to execute UPC code.  For example, code
+accessing shared scalars and arrays, UPC barriers, UPC locks, and UPC
+allocations is allowed on the OMP master thread only.
+
 #### Configuration Options
 
-There are no OpenMP specific options in Clang UPC.
+There are no OpenMP specific options in Clang UPC.  However, special check for
+UPC code inside the OMP code sections is added when compiler is built with
+__-DLIBUPC_ENABLE_RUNTIME_CHECKS__ option enabled.
 
 #### Compile Options
 
