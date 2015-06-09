@@ -165,6 +165,11 @@ used on the command line:
   'smp' for symmetric multiprocessing or 'portals4' for Infiniband with
   Portals4 package.
 
+* __-DLIBUPC_ENABLE_RUNTIME_OMP_CHECKS__:=[0\|1]
+
+  OMP children threads are not allowed to access UPC shared data.  Enable
+  the check only in debugging mode as this checks affects performance.
+
 ### 1.6 SMP Runtime Options
 
 * __-DLIBUPC_ENABLE_AFFINITY__:=[True\|False]

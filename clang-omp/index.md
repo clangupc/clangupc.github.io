@@ -37,13 +37,13 @@ The following restrictions apply when executing OMP code in UPC environment:
 
 * OMP worker threads are not allowed to execute UPC code.  For example, code
 accessing shared scalars and arrays, UPC barriers, UPC locks, and UPC
-allocations is allowed on the OMP master thread only.
+allocations is allowed on the OMP master thread only (UPC thread).
 
 #### Configuration Options
 
 There are no OpenMP specific options in Clang UPC.  However, special check for
 UPC code inside the OMP code sections is added when compiler is built with
-__-DLIBUPC_ENABLE_RUNTIME_CHECKS__ option enabled.
+__-DLIBUPC_ENABLE_RUNTIME_OMP_CHECKS__ option enabled.
 
 #### Compile Options
 
@@ -67,6 +67,7 @@ export LD_LIBRARY_PATH=/install/prefix/lib:OpenMP library path:$LD_LIBRARY_PATH
 
 All the work done on this project is on a special _clang-omp_ branch.
 
+* 05/25/2015 - clang-omp branch merged into the main development branch
 * 03/01/2015 - OpenMp/Clang branch merged into Clang UPC
 
 ### References
