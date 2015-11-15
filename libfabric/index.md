@@ -73,7 +73,15 @@ Enable fabric check for shared endpoints.  Default is disabled.
 
 Specify directory where PMI include file is.  Default is '/usr/include/slurm'.
 
+* __-DLIBUPC_MEMORY_ALIGNMENT__:=_4_
+
+Alignment for local/target buffers.  Default is 4.
+
 ### Project status
+
+* 11/13/2015 First RMA test passes on Cray GNI
+
+* 07/01/2015 Added all remaining UPC functionality
 
 * 01/01/2015 Added support for upc_global_exit()
 
@@ -81,7 +89,7 @@ Specify directory where PMI include file is.  Default is '/usr/include/slurm'.
 
 * 12/26/2014 Added broadcast capabilities
 
-* 12/24/2014 Added uPC locks
+* 12/24/2014 Added UPC locks
 
 * 10/28/2014 Upgrade to the latest libfabric API
 
