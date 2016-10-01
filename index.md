@@ -24,10 +24,7 @@ for the LLVM compiler.
 #### Clang UPC
 
 Clang UPC is the first implementation of the UPC language by using the Clang
-and LLVM framework.  The current work is based on the LLVM 3.4 version of
-Clang/LLVM.
-
-Two GitHub repositories (https://github.com/Intrepid/llvm-upc and
+and LLVM framework.  Two GitHub repositories (https://github.com/Intrepid/llvm-upc and
 https://github.com/Intrepid/clang-upc) are used for developing Clang UPC.
 
 More info: [Clang UPC webpage](/clang-upc/)
