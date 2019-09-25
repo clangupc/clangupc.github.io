@@ -56,9 +56,9 @@ directories.  Follow these steps to checkout all the necessary components:
 
 <pre>
 mkdir src; cd src
-git clone -b clang-upc-3.9.1-1 https://github.com/Intrepid/llvm-upc.git .
+git clone -b clang-upc-3.9.1-0 https://github.com/Intrepid/llvm-upc.git .
 mkdir tools/clang; cd tools/clang
 git clone -b clang-upc-3.9.1-1 https://github.com/Intrepid/clang-upc.git .
 mkdir tools/upc2c; cd tools/upc2c
-git clone -b clang-upc-3.9.1-1 https://github.com/Intrepid/upc2c.git .
+git clone -b clang-upc-3.9.1-0 https://github.com/Intrepid/upc2c.git .
 </pre>
