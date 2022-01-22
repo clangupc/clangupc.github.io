@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clang UPC
+title: Clang UPC Compiler
 tagline: Unified Parallel C
 group: navigation
 ---
