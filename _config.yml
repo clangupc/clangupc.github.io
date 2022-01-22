@@ -12,8 +12,8 @@ highlighter: pygments
 title : Home
 tagline: High Performance Computing
 author :
-  name : Intrepid Technology, Inc.
-  email : info@intrepid.com
+#  name : Intrepid Technology, Inc.
+  email : gasnet-staff@lbl.gov
   github : username
 #  twitter : username
 #  feedburner : feedname
