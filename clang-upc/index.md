@@ -6,8 +6,8 @@ group: navigation
 ---
 {% include JB/setup %}
 
-Clang Unified Parallel C (Clang UPC) toolset provides a compilation and
-execution environment for programs written in the UPC (Unified Parallel C)
+Clang UPC toolset provides a compilation and
+execution environment for programs written in the UPC 
 language. The Clang UPC compiler extends the capabilities of the Clang LLVM
 C compiler.
 
@@ -45,26 +45,20 @@ C compiler.
 
 ## Supported Platforms
 
-At this time, Clang UPC is available on the following platforms:
+At this time, Clang UPC is supported on the following platforms:
 
 <dl>
 <dt>Intel x86_64</dt>
 <dd>
 <ul><li>Linux 64 bit uniprocessor or multiprocessor systems
         (RHEL, SUSE, Fedora, CentOS, Ubuntu)</li>
-    <li>Apple Mac OS X system (Snow Leopard, Lion, and Mountain Lion)</li>
-    <li>Free BSD, Open BSD, and Net BSD platforms</li>
+    <li>Apple macOS systems</li>
 </ul>
 </dd>
 <dt>Intel x86</dt>
-<dd>Linux 32 bit systems (Redhat based distributions)</dd>
-<dt>IBM PowerPC</dt>
-<dd>IBM Power6/Power7 Linux based systems (including PERCS)</dd>
+<dd>Linux 32-bit systems</dd>
+<dt>IBM PowerPC and Power (big- and little-endian)</dt>
+<dd>Linux 64-bit systems</dd>
 </dl>
-
-If you would like to learn of future ports to other platforms, or
-would like to discuss the feasibility of implementing Clang UPC
-on a platform of interest to you, please
-[send us a note](mailto:upc@intrepid.com).
 
 ### More on Clang UPC
