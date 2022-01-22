@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Clang UPC2C Translator
+group: navigation
 tagline: 
 ---
 {% include JB/setup %}

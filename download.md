@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Downloads"
-group: navigation
 description: "Clang UPC Downloads"
 ---
 {% include JB/setup %}

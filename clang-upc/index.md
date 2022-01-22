@@ -2,6 +2,7 @@
 layout: page
 title: Clang UPC
 tagline: Unified Parallel C
+group: navigation
 ---
 {% include JB/setup %}
 
