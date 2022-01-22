@@ -159,7 +159,7 @@ used on the command line:
   The maximum number of children in each sub-tree used to implement
   UPC collectives operations (e.g. upc_barrier) (4 by default).
 
-* __-DLIBUPC_RUNTIME_MODEL__:=[__smp__\|__portals4__]`
+* __-DLIBUPC_RUNTIME_MODEL__:=[__smp__\|__portals4__]
 
   Specify the runtime implementation model for UPC, where model may be:
   'smp' for symmetric multiprocessing or 'portals4' for Infiniband with
