@@ -1,70 +1,61 @@
 ---
 layout: page
 title: Clang UPC2C Translator
-group: navigation
+group: none
 tagline: 
 ---
 {% include JB/setup %}
 
-This project translates a program written in [UPC](http://upc-lang.org)
-(Unified Parallel C) program into the C language program.  It is built at the
-top of the [Clang UPC](https://github.com/Intrepid/clang-upc/wiki) and is
-compatible with the [Berkeley UPC](http://upc.lbl.gov) translator.
-
-## Installing Clang UPC to C Translator
-
-### 1.1 Requirements
-
-Clang UPC to C translator (upc2c) requires Clang UPC.
-
-### 1.2 Build and Install
-
-Get sources for llvm-upc and clang-upc projects:
-
-<pre>
-mkdir [path/to/src]; cd [path/to/src]
-git clone https://github.com/Intrepid/llvm-upc.git llvm
-cd llvm/tools; git clone https://github.com/Intrepid/clang-upc.git clang
-</pre>
-
-Get sources for upc2c project:
-
-<pre>
-cd clang/tools; git clone https://github.com/Intrepid/upc2c.git upc2c
-</pre>
-
-<p class="note">Note: clang is installed as a llvm's tool, while upc2c is installed as a
-clang's tool.</p>
-
-Build the translator:
-
-<pre>
-mkdir [path/to/build]; cd [path/to/build]
-cmake path/to/llvm [options]
-</pre>
-
-_build_ is a directory that holds the intermediate build products. The
-build directory needs to be outside the llvm tree, but other than that, it’s
-arbitrary.
-
-See [ClangUPC](https://github.com/Intrepid/clang-upc/wiki) documentation
-for additional build options.
-
-### Running UPC to C translator
-
-Clang upc2c is invoked by the running the _upc2c_ driver.
-
-<pre>
-upc2c -o out.c program.upc
-</pre>
-
-By default, the output file name has an extension _trans.c_.
+The Clang UPC2C Translator (aka cupc2c) is a source-to-source translator which
+transforms a program written in [UPC](http://upc-lang.org) into ISO standard
+C99.  The resulting output can be compiled and linked with a suitable UPC
+runtime such as the one provided by [Berkeley UPC](https://upc.lbl.gov).  When
+properly configured, Berkeley UPC's `upcc` compiler driver will invoke
+Clang UPC2C transparently.
 
 ## Supported Platforms
 
-The UPC2C translator works on all the platforms where Clang UPC is supported.
+While it is likely that Clang UPC2C can be built and used on any platform where
+LLVM 9 builds, it is currently supported only on the following platforms (each
+of which receives periodic regression testing):
 
-## More on Clang UPC2C translator
++ Linux/x86-64
++ Linux/ppc64le
++ macOS/x86-64
 
-* [Berkeley UPC](http://upc.lbl.gov)
+## Downloads
+
+The current release and its license file are available from GitHub:
+
++ [clang-upc2c-9.0.1-2.tar.gz](https://github.com/clangupc/upc2c/releases/download/clang-upc2c-9.0.1-2/clang-upc2c-9.0.1-2.tar.gz)
++ [LICENSE.TXT](https://raw.githubusercontent.com/clangupc/upc2c/clang-upc2c-9.0.1-2/LICENSE.TXT)
+
+## Build Instructions
+
+#### Coming Soon:
+Instructions for building Clang UPC2C from a release (.tar.gz) file.
+
+## Git Instructions
+
+#### Coming Soon:
+Instructions for building Clang UPC2C from the repositories on GitHub.
+
+## Contact Information
+
+### Bug Reports
+
+Bugs in Clang UPC2C can be reported on the
+[Clang UPC2C issues](https://github.com/clangupc/upc2c/issues) page.
+
+Bugs in the Berkeley UPC driver or libraries can be reported in the corresponding
+[Bugzilla server](https://upc-bugs.lbl.gov) under the "BerkeleyUPC" product.
+
+If in doubt as to which to use, please use the Berkeley UPC Bugzilla.  
+In either case, please search the bug database for a possible solution
+to your problem before entering a new report.
+
+### General Info
+
+To reach the developers, free to drop us a note at
+`upc-devel[non-robots should remove this part]@lbl.gov`.
 
