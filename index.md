@@ -6,108 +6,71 @@ tagline:
 {% include JB/setup %}
 
 The Clang UPC toolset provides a compilation and execution environment for
-programs written in the UPC (Unified Parallel C) language.
+programs written in the [UPC language](http://upc-lang.org).
 The Clang UPC compiler extends the capabilities of the Clang front-end
 for the LLVM compiler.
 
-### Latest News
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; 
-    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+## Latest News
 
-### Projects
++ Jan 21, 2022: Clang UPC2C 9.0.1-2 released
++ Jan 21, 2022: Clang UPC 3.9.1-2 released
+
+## Projects
 - - -
 
-#### Clang UPC
+#### Clang UPC to C Translator (Clang UPC2C)
 
-Clang UPC is the first implementation of the UPC language by using the Clang
-and LLVM framework.  Two GitHub repositories (https://github.com/Intrepid/llvm-upc and
-https://github.com/Intrepid/clang-upc) are used for developing Clang UPC.
+The Clang UPC to C translator uses the Clang UPC infrastructure to
+translate UPC into C code.
 
-More info: [Clang UPC webpage](/clang-upc/)
-
-- - -
-
-#### UPC to C Translator
-
-The UPC to C translator (https://github.com/Intrepid/upc2c) uses the
-Clang UPC infrastructure to translate UPC into the C code.
-[Berkeley UPC](http://upc.lbl.gov) is the framework for effective usage
-of the UPC2C translator.
+[Berkeley UPC](https://upc.lbl.gov) provides a compiler driver and UPC
+runtime library for effective usage of the Clang UPC2C translator, including
+for distributed UPC applications.
 
 More info: [Clang UPC2C webpage](/clang-upc2c/)
 
 - - -
 
-#### Clang OMP Support
+#### Clang UPC
 
-The goal of this project is to allow interoperability between UPC and Open MP
-code.  For this purpose an OpenMP/Clang branch (https://clang-omp.github.io/)
-has been merged into the Clang UPC.
+Clang UPC is an implementation of the UPC language using the Clang and LLVM
+framework.
 
-More information on the [UPC/OMP Project](/clang-omp/)
+As with Clang UPC2C, [Berkeley UPC](https://upc.lbl.gov) provides a compiler
+driver and UPC runtime library which can be used with Clang UPC for distributed
+environments.  However, Clang UPC can also be used alone for single-node
+application runs.
 
-- - -
-
-#### LLVM IR Remote Access
-
-The goal of this project is to allow UPC
-pointers-to-shared (or some other remote pointer) to be expressed in the LLVM
-IR and to in turn gain the benefits of LLVM optimizations that operate on
-memory references.
-
-More information on the [UPC IR Project](/clang-upc-ir/)
+More info: [Clang UPC webpage](/clang-upc/)
 
 - - -
 
-#### Portals 4 Runtime
+#### Past Projects
 
-The Clang UPC for Portals 4.0 (Portals4, Portals) is an implementation
-of Clang UPC that uses Portals interface for message passing between
-UPC threads running on separate nodes in a system area network.
-
-More information on the [Portals4 Runtime](/portals4/index.html).
+Info on past projects related to the Clang UPC infrastructure is available
+[here](/legacy/)
 
 - - -
 
-#### Libfabric Runtime
+#### Other UPC Links
 
-Clang UPC Libfabric Runtime is an implementation of Clang UPC that uses
-Libfabric API for message passing between UPC threads running on
-separate nodes in a system area network.
-
-More information in the [Libfabric Runtime](/libfabric/index.html).
-
-- - -
-
-#### Try it and get involved!
-
-Once you have a chance to try it, consider getting involved in the Clang UPC
-community.  <a href="mailto:info@intrepid.com">Drop us a message</a>
-with your ideas and observations.
-
-#### Other UPC projects
-
-* [UPC Language](http://upc-lang.org)
+* [UPC Language](https://upc-lang.org)
 
   Main UPC language web site with tutorials and references.
 
-* [UPC Specification](http://code.google.com/p/upc-specification/)
+* [UPC Specification](https://upc.lbl.gov/publications/upc-spec-1.3.pdf)
 
-  UPC Specification group website.  Version 1.3 was recently released.
+  This link downloads version 1.3 of the UPC language and library specifications.
 
-* [GNU UPC](http://www.gccupc.org)
+* [Berkeley UPC](https://upc.lbl.gov/)
+
+  Berkeley UPC project page.  Clang UPC2C and Clang UPC can both
+  be used together with the Berkeley UPC compiler driver and runtime, allowing
+  the execution of UPC programs on large-scale multiprocessors,
+  PC clusters, and clusters of shared memory multiprocessors.
+
+* [GNU UPC](https://github.com/Intrepid/GUPC)
 
   UPC compiler based on the GNU GCC.  All the GNU UPC features
   are also available in Clang UPC.
-
-* [Berkeley UPC](http://upc.lbl.gov/)
-
-  Berkeley UPC project page.  Clang UPC (both compiler and UPC2C translator)
-  can be used together with the Berkeley UPC framework and runtime, allowing
-  the execution of UPC programs on large-scale multiprocessors,
-  PC clusters, and clusters of shared memory multiprocessors.
 
