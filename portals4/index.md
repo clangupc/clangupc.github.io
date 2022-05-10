@@ -38,21 +38,21 @@ Portals4 runtime based UPC programs.
 
 ### More on Portals4 Library
 
-* [UPC Runtime Design Utilizing Portals 4](http://www.gccupc.org/gnu-upc-documentation/upc-runtime-design-utilizing-portals-4)
+* [UPC Runtime Design Utilizing Portals 4](https://web.archive.org/web/20171021180114/https://gccupc.org/gnu-upc-documentation/upc-runtime-design-utilizing-portals-4)
   This document describes the design of a UPC runtime, which implements UPC
   (Unified Parallel C) semantics, and that makes use of the functions and
   operations provided by the Portals-4 API (Application Programming Interface)
 
-* [Portals Network Prgramming Interface](http://www.cs.sandia.gov/Portals/)
+* [Portals Network Prgramming Interface](https://www.sandia.gov/portals/)
   Portals is a message passing interface intended to allow scalable,
   high-performance network communication between nodes of a parallel computing
   system.
 
-* [Portals 4.0](http://www.cs.sandia.gov/Portals/portals4.html)
+* [Portals 4.0](https://www.sandia.gov/portals/portals-4-0-specification/)
   Portals version 4.0 ss substantially enhanced Portals interface to better
   support the various PGAS programming models. 
 
-* [Portals 4 Reference Implementation](https://code.google.com/p/portals4/)
+* [Portals 4 Reference Implementation](https://www.sandia.gov/portals/portals-4-0-implementations/)
   The Portals 4 Reference Implementation is a complete implementation of
   Portals 4, with transport over InfiniBand VERBS and UDP.
 

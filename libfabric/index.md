@@ -5,7 +5,7 @@ description: ""
 ---
 {% include JB/setup %}
 
-[Libfabric](https://www.openfabrics.org/downloads/OFIWG/API/fabric.html) is
+[Libfabric](https://www.openfabrics.org/openfabrics-interfaces/) is
 a high-performance fabric software library designed to provide
 low-latency interfaces to fabric hardware.  
 
