@@ -169,7 +169,7 @@ $ git clone -b [BRANCH] https://github.com/clangupc/clang-upc [SRCDIR]/tools/cla
 Where the `[BRANCH]` placeholder should be replaced with one of the following:
 
 + For the current CUPC release: `main-cupc`
-+ For a specific CUPC release: `clang-upc2c-[VERSION]`
++ For a specific CUPC release: `clang-upc-[VERSION]`
     + Where `3.9.1-2` is an example substitution for `[VERSION]`
 + For the current CUPC development branch: `develop-cupc`
 
