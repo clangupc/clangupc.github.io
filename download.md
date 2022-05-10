@@ -9,5 +9,5 @@ These pages document two distinct products, which appear in the navigation
 header.  One can jump directly to their respective Downloads information
 using the following links:
 
-* [Clang UPC2C](clang-upc2c_/#downloads)
-* [Clang UPC](clang-upc_/#downloads)
+* [Clang UPC2C](clang-upc2c#downloads)
+* [Clang UPC](clang-upc#downloads)
