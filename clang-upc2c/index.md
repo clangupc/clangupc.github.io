@@ -32,6 +32,14 @@ The current release and its license file are available from GitHub:
 
 ## Build Instructions
 
+This section contains instructions for building CUPC2C from source for use with
+the Berkeley UPC Runtime.  However, for most users it may be more convenient to
+use the `cupc2c-install.sh` script, which downloads and installs both CUPC2C
+and Berkeley UPC with reasonable defaults, in a single step.  This script is
+located in the `contrib` directory of the Berkeley UPC distribution or available
+[here](https://bitbucket.org/berkeleylab/upc-runtime/raw/master/contrib/cupc2c-install.sh).
+
+
 These instructions assume you begin from a source directory, such as from
 unpacking a release tar archive (such as from the download link above) or
 comprised of git sources (described in the next section: "Git Instructions").
