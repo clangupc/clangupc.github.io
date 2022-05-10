@@ -7,9 +7,9 @@ group: none
 {% include JB/setup %}
 
 The Clang UPC compiler (aka cupc) is a compiler for the
-[UPC](http://upc-lang.org) language.  C99.  Depending on how it is configured,
-it can be target multiple UPC runtime library implementations.  However, this
-document is focused primarily on building for use with by
+[UPC](http://upc-lang.org) language.  Depending on how it is configured,
+it can target multiple UPC runtime library implementations.  However, this
+document is focused primarily on building CUPC for use with
 [Berkeley UPC](https://upc.lbl.gov).  When properly configured, Berkeley UPC's
 `upcc` compiler driver will invoke Clang UPC transparently and link with its
 runtime library.
@@ -80,7 +80,7 @@ There are a mixture of required, recommended and optional arguments to pass to
 `cmake`, to configure your build of CUPC.  They are described in detail on
 the [CUPC CMake Options](./cmake-options.html) page.  However, in most cases
 the following are sufficient with the appropriate substitutions for the
-`[PREFIX]`, `[BLDDIR]` and `[SRCDIR]` placeholders.
+`[PREFIX]` (see below), `[BLDDIR]` and `[SRCDIR]` placeholders.
 
 On a Linux system:
 
@@ -111,6 +111,13 @@ For macOS, you should add the following to the Linux example above:
 
 On some systems, CMake version 3 may be installed as `cmake3` rather than
 `cmake`.
+
+The `[PREFIX]` placeholder must be replaced by the full path to an installation
+directory.  The "Install" step will copy the built CUPC software to directories
+below this prefix, such as `[PREFIX]/bin` and `[PREFIX]/lib`.  We recommend
+choosing an initially empty location as the prefix, and strongly discourage
+choices such as `/usr` and `/usr/local`.  This ensures that you can reliably
+remove the entirety of a CUPC installation at a later time.
 
 #### 3. Build CUPC
 
@@ -149,10 +156,10 @@ to use the tar archive in the download section.  However, if there is a need,
 it is also possible to construct such a directory from sources obtained using
 `git`.
 
-The development of CUPC is spread over three git repositories, with two of
-them having distinct branches for the CUPC2C and CUPC products.  Therefore, you
-should use the following steps to ensure a complete and consistent source tree.
-With appropriate substitutions for `[SRCDIR]` and `[BRANCH]` (see below):
+The development of CUPC is spread over two git repositories, each having
+distinct branches for the CUPC2C and CUPC products.  Therefore, you should use
+the following steps to ensure a complete and consistent source tree.  With
+appropriate substitutions for `[SRCDIR]` and `[BRANCH]` (see below):
 
 ```
 $ git clone -b [BRANCH] https://github.com/clangupc/llvm-upc  [SRCDIR]
@@ -162,7 +169,7 @@ $ git clone -b [BRANCH] https://github.com/clangupc/clang-upc [SRCDIR]/tools/cla
 Where the `[BRANCH]` placeholder should be replaced with one of the following:
 
 + For the current CUPC release: `main-cupc` (the default branch)
-+ For a specific CUPC release: `clang-upcc2c-[VERSION]`
++ For a specific CUPC release: `clang-upc2c-[VERSION]`
     + Where `3.9.1-2` is an example substitution for `[VERSION]`
 + For the current CUPC development branch: `develop-cupc`
 

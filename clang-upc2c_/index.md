@@ -79,7 +79,7 @@ There are a mixture of required, recommended and optional arguments to pass to
 `cmake`, to configure your build of CUPC2C.  They are described in detail on
 the [CUPC2C CMake Options](./cmake-options.html) page.  However, in most cases
 the following are sufficient with the appropriate substitutions for the
-`[PREFIX]`, `[BLDDIR]` and `[SRCDIR]` placeholders.
+`[PREFIX]` (see below), `[BLDDIR]` and `[SRCDIR]` placeholders.
 
 On a Linux system:
 
@@ -110,6 +110,13 @@ For macOS, you should add the following to the Linux example above:
 
 On some systems, CMake version 3 may be installed as `cmake3` rather than
 `cmake`.
+
+The `[PREFIX]` placeholder must be replaced by the full path to an installation
+directory.  The "Install" step will copy the built CUPC2C software to
+directories below this prefix, such as `[PREFIX]/bin` and `[PREFIX]/lib`.
+We recommend choosing an initially empty location as the prefix, and strongly
+discourage choices such as `/usr` and `/usr/local`.  This ensures that you
+can reliably remove the entirety of a CUPC2C installation at a later time.
 
 #### 3. Build CUPC2C
 
