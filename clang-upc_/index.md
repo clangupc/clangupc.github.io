@@ -67,9 +67,9 @@ So, you must create a distinct directory for building CUPC.
 This build directory is also distinct from the installation directory, and
 therefore is normally deleted after the installation is complete.
 Something like `/tmp/cupc-build` may be appropriate.  When configured
-as recommended, you should expect to need no more than 2GB of disk space [WIP]
+as recommended, you should expect to need no more than 2GB of disk space
 for the build.  However, without the recommended options to `cmake` one
-could need as much as 50GB. [WIP]
+could need as much as 20GB.
 
 In the following steps `[SRCDIR]` and `[BLDDIR]` will be used as placeholders
 for the CUPC source directory and build directory, respectively.

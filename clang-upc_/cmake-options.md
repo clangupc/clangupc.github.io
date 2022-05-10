@@ -55,8 +55,8 @@ and from the install (saving persistent disk space).
 ```
 
 Omitting certain of these options can increase the disk space required by the
-build directly from under 2GB to over 50GB, and the size of the install from
-under 1GB to over 15GB.
+build directly from under 2GB to over 20GB, and the size of the install from
+under 1GB to over 10GB.
 
 Under some conditions, omitting some of these options may even result in a
 failed `make` or `make install` step.
