@@ -21,8 +21,7 @@ for the LLVM compiler.
 #### Clang UPC to C Translator (Clang UPC2C)
 
 The Clang UPC to C translator uses the Clang UPC infrastructure to
-translate UPC into C code.  Development of Clang UPC2C is hosted at GitHub
-([https://github.com/clangupc/upc2c](https://github.com/clangupc/upc2c)).
+translate UPC into C code.
 
 [Berkeley UPC](https://upc.lbl.gov) provides a compiler driver and UPC
 runtime library for effective usage of the Clang UPC2C translator, including
@@ -35,11 +34,7 @@ More info: [Clang UPC2C webpage](/clang-upc2c/)
 #### Clang UPC
 
 Clang UPC is an implementation of the UPC language using the Clang and LLVM
-framework.  Two GitHub repositories
-([https://github.com/clangupc/llvm-upc](https://github.com/clangupc/llvm-upc)
-and
-[https://github.com/clangupc/clang-upc](https://github.com/clangupc/clang-upc))
-are used for development of Clang UPC.
+framework.
 
 As with Clang UPC2C, [Berkeley UPC](https://upc.lbl.gov) provides a compiler
 driver and UPC runtime library which can be used with Clang UPC for distributed
