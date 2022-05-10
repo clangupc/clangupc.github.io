@@ -11,12 +11,9 @@ The Clang UPC compiler extends the capabilities of the Clang front-end
 for the LLVM compiler.
 
 ## Latest News
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; 
-    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+
++ Jan 21, 2022: Clang UPC2C 9.0.1-2 released
++ Jan 21, 2022: Clang UPC 3.9.1-2 released
 
 ## Projects
 - - -
